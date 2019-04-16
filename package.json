@@ -2,7 +2,7 @@
   "name": "User_Interface",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "live-server",
     "build": "less-watch-compiler server/assets/less public/css index.less --run-once",
