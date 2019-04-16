@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server public",
+    "start": "live-server",
     "build": "less-watch-compiler server/assets/less public/css index.less --run-once",
     "build:watch": "less-watch-compiler server/assets/less public/css index.less"
   },
