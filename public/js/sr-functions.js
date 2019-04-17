@@ -60,3 +60,58 @@ sr.reveal('.rightSlide-3', {
     easing:'ease-in'
 })
 
+sr.reveal('.bottomUp-0', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 200,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+sr.reveal('.bottomUp-1', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 300,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+sr.reveal('.bottomUp-2', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 400,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+sr.reveal('.bottomUp-3', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 500,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+sr.reveal('.bottomUp-4', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 600,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+sr.reveal('.bottomUp-5', {
+    origin: 'bottom',
+        distance: '20px',
+        duration: 400,
+        delay: 700,
+        opacity: 0,
+        scale: 1,
+        easing: 'linear',
+})
+

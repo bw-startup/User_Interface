@@ -185,6 +185,7 @@ body {
   background-color: #fff;
   color: #212529;
   text-align: left;
+  overflow-x: hidden;
 }
 /**
  * Always hide an element with the `hidden` HTML attribute.

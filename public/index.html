@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Predictaventure</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,800,900%7CLato:400,700,900%7COpen+Sans:400,400i,700,800%7CRoboto:400,400i,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="./js/sr-functions.js" async></script>
     <style>
+      .logo span {
+        font-weight:400;
+      }
       .video_wrap {
         display: none;
         position: fixed;
@@ -85,9 +89,9 @@
       #process-section .container {
         padding:20px 0;
       }
-      #process-section i {
+     /*#process-section i {
         margin-top:5px;
-      }
+      }*/
       #case-study-section .container {
         padding:80px 0;
       }
@@ -113,9 +117,13 @@
         nav a {
           display:block;
           padding:20px;
-          border-bottom:1px solid grey;
+          border-bottom:1px solid #ccc;
         }
-        nav a:hover {
+        nav a:last-child {
+          border-bottom:none;
+        }
+
+        nav a:hover, nav a:active {
           background: #187741;
           color:white;
           font-weight:500;
@@ -123,6 +131,10 @@
         .mobile-nav-container {
           margin-top:22px;
           background:white;
+          border-left:1px solid #ccc;
+          border-right:1px solid #ccc;
+          border-bottom:1px solid #ccc;
+
         }
       }
       
@@ -136,7 +148,7 @@
         <div class="row">
           
           <div class="col-12 col-md-2">
-            <h2>predictaventure</h2>
+            <h2 class="logo">predicta<span>venture</span></h2>
           </div>
 
           <div class="col-12 col-md-10 d-flex justify-content-end align-items-center">
@@ -199,25 +211,25 @@
     <section id="process-section" class="py-4 bg-matisse text-white">
       <div class="container">
         <div class="row text-center">
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-3 mt-2">
             <h4>Input your start-up.</h4>
           </div>
 
           <div class="col-12 col-md-1">
-            <i class="fas fa-arrow-right fa-2x d-none d-md-block"></i>
+            <i class="fas fa-arrow-right fa-2x d-none d-md-block mt-3"></i>
             <i class="fas fa-arrow-down fa-2x d-md-none d-block"></i>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4  mt-2">
             <h4>Run it against our model.</h4>
           </div>
 
           <div class="col-12 col-md-1">
-            <i class="fas fa-arrow-right fa-2x d-none d-md-block"></i>
+            <i class="fas fa-arrow-right fa-2x d-none d-md-block mt-3"></i>
             <i class="fas fa-arrow-down fa-2x d-md-none d-block"></i>
           </div>
 
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-3  mt-2">
             <h4>Get success prediction.</h4>
           </div>
         </div>
@@ -260,7 +272,7 @@
             <img src="./img/features.png"
                  class="w-100"></img>
            </div>
-           <div class="col-12 col-md-6 feature-content">
+           <div class="col-12 col-md-5 feature-content">
              <h2>Content C</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem massa, commodo a maximus a, pretium sed sem. In hac habitasse platea dictumst. Donec tincidunt interdum felis at mollis. Aenean tempor mattis orci, ultrices posuere tellus tempor sit amet. Mauris sed augue ultricies, maximus neque vel, vehicula metus.</p>
            </div>

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>About Us - Predictaventure</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,800,900%7CLato:400,700,900%7COpen+Sans:400,400i,700,800%7CRoboto:400,400i,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="./components/TeamSection/TeamSection.js" async></script>
+    
     <style>
+      .logo span {
+        font-weight:400;
+      }
         .video_wrap {
           display: none;
           position: fixed;
@@ -20,7 +25,7 @@
           width: 100%;
           height: 100%;
         }
-        #a-demo-video .close {
+        #a-demo-video .close, .block-content-header .close {
           color: white;
           position: absolute;
           top: 30px;
@@ -90,33 +95,75 @@
         #title-section {
         padding-top:90px;
       }
-        @media (max-width: 768px) {
-          nav {
-            display:none;
-            height:0;
-            width:100%;
-            text-align:center;
-          }
-          .nav-button {
-            display: block;
-          }
-          nav a {
-            display:block;
-            padding:20px;
-            border-bottom:1px solid grey;
-          }
-          nav a:hover {
-            background: #187741;
-            color:white;
-            font-weight:500;
-          }
-          .mobile-nav-container {
-            margin-top:22px;
-            background:white;
-          }
+
+      .teamCard-block {
+        overflow:hidden;
+        position:relative;
+      }
+      .teamCard-faceCard {
+        display:block ;
+      }
+      .hide-face-card {
+        visibility:hidden !important;
+      }
+      .teamCard-content {
+        display:none;
+        transform:rotate(-90deg);
+        width:100%;
+      }
+      .active-card{
+          display:block !important;
+          position:absolute;
+          top:0;
+          left:0;
+          transform:rotate(0deg);
+          transition: all 500ms;
+        }
+        .block-content-header {
+          color:white;
+          padding:5px 10px;
+        }
+        .block-content-header h4 {
+          margin:0;
+          padding:5px;
+        }
+        .block-content-body {
+          padding:10px;
+        }
+
+      @media (max-width: 768px) {
+        nav {
+          display:none;
+          height:0;
+          width:100%;
+          text-align:center;
+        }
+        .nav-button {
+          display: block;
+        }
+        nav a {
+          display:block;
+          padding:20px;
+          border-bottom:1px solid #ccc;
+        }
+        nav a:last-child {
+          border-bottom:none;
+        }
+        nav a:hover, nav a:active {
+          background: #187741;
+          color:white;
+          font-weight:500;
+        }
+        .mobile-nav-container {
+          margin-top:22px;
+          background:white;
+          border-left:1px solid #ccc;
+          border-right:1px solid #ccc;
+          border-bottom:1px solid #ccc;
         }
         
-  
+      }
+         
       </style>
   </head>
   <body>
@@ -124,9 +171,9 @@
 
           <div class="container">
             <div class="row">
-              <div class="col-12 col-md-2">
-                <h2>predictaventure</h2>
-              </div>
+                <div class="col-12 col-md-2">
+                    <h2 class="logo">predicta<span>venture</span></h2>
+                  </div>
     
               <div class="col-12 col-md-10 d-flex justify-content-end align-items-center">
                 <!-- TODO add breadcrumb menu -->
@@ -153,7 +200,6 @@
     
         </header>
     
-
     <section id="title-section">
       <div class="container">
         <div class="row">
@@ -164,8 +210,23 @@
         </div>
       </div>
     </section>
+    
+    <section id="team-section" class="py-5">  
+      
+      </section>
+      <footer class="bg-color-grey-333 text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 pt-2 text-center">
+                <p>© 2019 Predictaventure. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="./js/sr-functions.js" async></script>
 
-    <section id="team-section" class="py-5"></section>
 
   </body>
 </html>
