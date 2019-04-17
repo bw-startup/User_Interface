@@ -1761,6 +1761,10 @@ header {
   z-index: 20;
   background: white;
 }
+header a {
+  text-decoration: none;
+  color: #212529;
+}
 @media (max-width:768px) {
   header .container {
     max-width: 100%;
