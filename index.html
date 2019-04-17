@@ -1,114 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Predictaventure</title>
+    <link rel="stylesheet" href="./public/css/index.css" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,800,900%7CLato:400,700,900%7COpen+Sans:400,400i,700,800%7CRoboto:400,400i,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/css/index.css" type="text/css"></link>
     <script src="./public/js/sr-functions.js" async></script>
-    <style>
-      .video_wrap {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        z-index:-999;
-        background:grey;
-      }
-      .video_wrap iframe {
-        width: 100%;
-        height: 100%;
-      }
-      #a-demo-video .close {
-        color: white;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        padding: 8px 16px;
-        border-radius: 50%;
-        text-decoration: none;
-      }
-
-      header {
-        height: 90px;
-        display: flex;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        z-index: 20;
-        background: white;
-      }
-      #cta-section {
-        padding-top:90px;
-      }
-      #a-demo-video:target {
-        display: flex;
-        z-index: 999;
-        justify-content: center;
-      }
-
-      .button-line {
-        border-bottom:5px solid black;
-        padding:5px 0;
-      }
-      .nav-button {
-        position:fixed;
-        right:10px;
-        top:10px;
-        display:none;
-        width:48px;
-        height:48px;
-        cursor: pointer;
-        z-index:9999;
-      }
-      #nav:checked ~ nav {
-        display:block;
-
-
-      }
-      .mobile-nav-container {
-        margin:0;
-        background:none;
-      }
-      @media (max-width: 768px) {
-        nav {
-          display:none;
-          height:0;
-          width:100%;
-          text-align:center;
-        }
-        .nav-button {
-          display: block;
-        }
-        nav a {
-          display:block;
-          padding:20px;
-          border-bottom:1px solid grey;
-
-        }
-        .mobile-nav-container {
-          margin-top:22px;
-          background:white;
-        }
-      }
-    </style>
   </head>
   <body>
     <header id="top-header" class="border-bottom">
 
       <div class="container">
         <div class="row">
+
           <div class="col-12 col-md-3">
-            <a href="#" class="a-logo">
-              <h2>predictaventure</h2>
+            <a href="#">
+              <h2 class="logo">predicta<span>venture</span></h2>
             </a>
           </div>
 
-          <div class="col-12 col-md-9 d-flex justify-content-end align-items-center">
+          <div class="col-12 col-md-9 d-flex justify-content-end align-items-center menu-items">
             <input type="checkbox" id="nav" class="hidden">
               <label for="nav" class="nav-button">
                 <div class="button-line"></div>
@@ -148,7 +62,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 order-1 order-lg-12 p-5">
+          <div class="col-12 col-lg-6 order-1 order-lg-12 py-5">
             <a href="#a-demo-video">
               <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80"
                    class="w-100"></img>
@@ -166,40 +80,44 @@
     <section id="process-section" class="py-4 bg-matisse text-white">
       <div class="container">
         <div class="row text-center">
-          <div class="col-12 col-md-3 px-0 d-flex justify-content-center align-items-center">
+          <!-- <div class="col-12 col-md-3 px-0 d-flex justify-content-center align-items-center"> -->
+          <div class="col-12 col-md-3 mt-2">
             <h4>Input your start-up.</h4>
           </div>
 
-          <div class="col-12 col-md-1 px-0 d-flex justify-content-center align-items-center">
-            <i class="fas fa-arrow-right fa-2x d-none d-md-block"></i>
+          <!-- <div class="col-12 col-md-1 px-0 d-flex justify-content-center align-items-center"> -->
+          <div class="col-12 col-md-1">
+            <i class="fas fa-arrow-right fa-2x d-none d-md-block mt-3"></i>
             <i class="fas fa-arrow-down fa-2x d-md-none d-block"></i>
           </div>
 
-          <div class="col-12 col-md-4 px-0 d-flex justify-content-center align-items-center">
+          <!-- <div class="col-12 col-md-4 px-0 d-flex justify-content-center align-items-center"> -->
+          <div class="col-12 col-md-4  mt-2">
             <h4>Run it against our model.</h4>
           </div>
 
-          <div class="col-12 col-md-1 px-0 d-flex justify-content-center align-items-center">
-            <i class="fas fa-arrow-right fa-2x d-none d-md-block"></i>
+          <!-- <div class="col-12 col-md-1 px-0 d-flex justify-content-center align-items-center"> -->
+          <div class="col-12 col-md-1">
+            <i class="fas fa-arrow-right fa-2x d-none d-md-block mt-3"></i>
             <i class="fas fa-arrow-down fa-2x d-md-none d-block"></i>
           </div>
 
-          <div class="col-12 col-md-3 px-0 d-flex justify-content-center align-items-center">
+          <!-- <div class="col-12 col-md-3 px-0 d-flex justify-content-center align-items-center"> -->
+          <div class="col-12 col-md-3  mt-2">
             <h4>Get a prediction.</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="features-section" class="py-4">
-
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-12 col-md-6 leftSlide-1">
-            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80"
-                 class="w-100 h-100"></img>
+    <section id="features-section">
+      <div class="container-100">
+        <div class="row">
+          <div class="col-12 col-md-6 leftSlide-1 feature-img-wrapper">
+            <img src="./img/features.png"
+                 class="w-100"></img>
            </div>
-           <div class="col-12 col-md-6">
+           <div class="col-12 col-md-5 feature-content">
              <h2>Crunchbase Dataset</h2>
              <p>A model is only as good as the data used to train it. By using Crunchbase we are able to incorporate the latest industry trends, investment insights, and rich company data.</p>
           </div>
@@ -207,27 +125,28 @@
       </div>
 
       <div class="bg-sail">
-        <div class="container">
-          <div class="row my-5">
-            <div class="col-12 col-md-6 order-12 order-md-1">
+        <div class="container-100">
+          <div class="row">
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-5 order-12 order-md-1 feature-content">
               <h2 class="pt-5">Delightful Frontend</h2>
               <p>Use a frontend that streamlines data input while providing a pleasant user experience. Our form asks for only what the model requires to generate a prediction.</p>
             </div>
-            <div class="col-12 col-md-6 order-1 order-md-12 rightSlide-2">
-              <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80"
-                   class="w-100 h-100"></img>
+            <div class="col-12 col-md-6 order-1 order-md-12 rightSlide-2 feature-img-wrapper">
+              <img src="./img/features2.png"
+                   class="w-100"></img>
              </div>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-12 col-md-6 leftSlide-3">
-            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80"
-                 class="w-100 h-100"></img>
+      <div class="container-100">
+        <div class="row">
+          <div class="col-12 col-md-6 leftSlide-3 feature-img-wrapper">
+            <img src="./img/features.png"
+                 class="w-100"></img>
            </div>
-           <div class="col-12 col-md-6">
+           <div class="col-12 col-md-5 feature-content">
              <h2>Reliable Backend</h2>
              <p>Designed as a standalone service our backend offers high reliability. The core API also supports 100% test coverage to ensure new features can be rolled out without risk of regression in functionality.</p>
            </div>
@@ -239,7 +158,7 @@
     <section id="case-study-section" class="py-4 bg-matisse text-white">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 px-2 py-5">
             <h2>Example Case Study</h2>
             <p>
               Given a fictitious company called Fabric Co we'll see how likely it is to succeed. The industry is located in Singapore, Central Region, the industry is Retail, number of Founders is 2, number of funding rounds is 1, number of articles is 4, and number of employees is 7.
@@ -249,9 +168,9 @@
             </p>
           </div>
 
-          <div class="col-12 col-md-4 d-flex justify-content-end">
+          <div class="col-12 col-md-4 d-flex justify-content-end img-wrapper">
             <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80"
-                 class="w-75 h-100"></img>
+                 class="w-75"></img>
           </div>
         </div>
       </div>

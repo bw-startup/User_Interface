@@ -15,19 +15,29 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-2">
-            <a href="index.html" class="a-logo">
-              <h2>predictaventure</h2>
-            </a>
-          </div>
+            <div class="col-12 col-md-2">
+              <a href="index.html">
+                <h2 class="logo">predicta<span>venture</span></h2>
+              </a>
+            </div>
 
           <div class="col-12 col-md-10 d-flex justify-content-end align-items-center">
+
+            <input type="checkbox" id="nav" class="hidden">
+              <label for="nav" class="nav-button">
+                <div class="button-line"></div>
+                <div class="button-line"></div>
+                <div class="button-line"></div>
+              </label>
+
             <nav>
-              <a href="index.html#features-section" class="px-2">Features</a>
-              <a href="index.html#case-study-section" class="px-2">Case Study</a>
-              <a href="index.html#methodology-section" class="px-2">Methodology</a>
-              <a href="about-us.html" class="px-2 text-bold">About Us</a>
-              <a href="#login" class="pl-2">Login</a>
+              <div class="mobile-nav-container">
+                <a href="#features-section" class="px-2">Features</a>
+                <a href="#case-study-section" class="px-2">Case Study</a>
+                <a href="#methodology-section" class="px-2">Methodology</a>
+                <a href="about-us.html" class="px-2 text-bold">About Us</a>
+                <a href="#login" class="pl-2">Login</a>
+              </div>
             </nav>
           </div>
         </div>
@@ -47,6 +57,19 @@
     </section>
 
     <section id="team-section" class="py-5"></section>
+
+    <footer class="bg-color-grey-333 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pt-2 text-center">
+            <p>© 2019 Predictaventure. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="./js/sr-functions.js" async></script>
 
   </body>
 </html>

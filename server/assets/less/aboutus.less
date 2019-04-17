@@ -1,0 +1,52 @@
+  #title-section {
+    padding-top:90px;
+  }
+
+  .teamCard-block {
+    overflow:hidden;
+    position:relative;
+    
+    .teamCard-faceCard {
+      display:block ;
+    }
+
+    .hide-face-card {
+      visibility:hidden !important;
+    }
+
+    .teamCard-content {
+      display:none;
+      transform:rotate(-90deg);
+      width:100%;
+      
+      .block-content-header {
+        color:white;
+        padding:5px 10px;
+        
+        h4 {
+          margin:0;
+          padding:5px;
+        }
+      }
+
+      .block-content-body {
+        padding:10px;
+      }
+    }
+    
+    .active-card {
+      display:block !important;
+      position:absolute;
+      top:0;
+      left:0;
+      transform:rotate(0deg);
+      transition: all 500ms;
+    }
+  }
+  
+  
+  
+  
+    
+    
+    
