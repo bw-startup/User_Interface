@@ -1840,17 +1840,20 @@ header nav .mobile-nav-container {
     border-bottom: none;
   }
 }
+header nav a:hover {
+  color: black;
+}
 @media (max-width:768px) {
   header nav a:hover {
     background: #187741;
-    color: white;
+    color: white !important;
     font-weight: 500;
   }
 }
 @media (max-width:768px) {
   header nav a:active {
     background: #187741;
-    color: white;
+    color: white !important;
     font-weight: 500;
   }
 }
