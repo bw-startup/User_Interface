@@ -1845,14 +1845,14 @@ header nav a:hover {
 }
 @media (max-width:768px) {
   header nav a:hover {
-    background: #187741;
+    background: #38c172;
     color: white !important;
     font-weight: 500;
   }
 }
 @media (max-width:768px) {
   header nav a:active {
-    background: #187741;
+    background: #249d57;
     color: white !important;
     font-weight: 500;
   }
