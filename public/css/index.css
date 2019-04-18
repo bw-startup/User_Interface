@@ -1841,10 +1841,14 @@ header nav .mobile-nav-container {
     border-bottom: 1px solid #ccc;
   }
 }
+header nav .mobile-nav-container .nav-active {
+  border-bottom: 3px solid #2368a2;
+}
 header nav a {
   text-transform: uppercase;
   font-family: Lato, sans-serif;
   font-size: 0.8rem;
+  padding-bottom: 5px;
 }
 @media (max-width:768px) {
   header nav a {
@@ -1885,14 +1889,18 @@ header nav a:last-child:active {
   color: white !important;
 }
 header nav a:hover {
-  color: black;
+  border-bottom: 3px solid #2368a2;
 }
 @media (max-width:768px) {
   header nav a:hover {
     background: #38c172;
     color: white !important;
     font-weight: 500;
+    border-bottom: none;
   }
+}
+header nav a:active {
+  border-bottom: 3px solid #2368a2;
 }
 @media (max-width:768px) {
   header nav a:active {
