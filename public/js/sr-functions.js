@@ -68,6 +68,7 @@ sr.reveal('.bottomUp-0', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 sr.reveal('.bottomUp-1', {
     origin: 'bottom',
@@ -77,6 +78,7 @@ sr.reveal('.bottomUp-1', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 sr.reveal('.bottomUp-2', {
     origin: 'bottom',
@@ -86,6 +88,7 @@ sr.reveal('.bottomUp-2', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 sr.reveal('.bottomUp-3', {
     origin: 'bottom',
@@ -95,6 +98,7 @@ sr.reveal('.bottomUp-3', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 sr.reveal('.bottomUp-4', {
     origin: 'bottom',
@@ -104,6 +108,7 @@ sr.reveal('.bottomUp-4', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 sr.reveal('.bottomUp-5', {
     origin: 'bottom',
@@ -113,5 +118,6 @@ sr.reveal('.bottomUp-5', {
         opacity: 0,
         scale: 1,
         easing: 'linear',
+        reset:false
 })
 
