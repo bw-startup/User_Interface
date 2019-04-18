@@ -1993,6 +1993,12 @@ header nav a:active {
   border-radius: 5px;
   box-shadow: 0 0 15px #ccc;
 }
+#methodology-section {
+  text-align: center;
+}
+#methodology-section h2 {
+  margin-bottom: 30px;
+}
 footer {
   padding: 10px;
 }
