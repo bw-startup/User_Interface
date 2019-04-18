@@ -1892,6 +1892,7 @@ header nav a:last-child:hover {
 }
 header nav a:last-child:active {
   background-color: #187741;
+  border: 1px solid #187741;
   color: white !important;
 }
 header nav a:hover {
