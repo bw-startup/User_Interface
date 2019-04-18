@@ -2015,6 +2015,9 @@ footer p {
     display: block;
   }
 }
+.teamCard-block a {
+  cursor: pointer;
+}
 .teamCard-block i {
   font-size: 1.5rem !important;
   color: #333;
