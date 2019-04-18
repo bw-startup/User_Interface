@@ -11,9 +11,9 @@ const data = [
   {name: "Alex E.", email: "pending@gmail.com", github: "https://github.com/AlexEntrepreneur", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEB79VDNH-1bbd05b917e5-512", bio: ""},
   {name: "Christian Ipanaque", email: "pending@gmail.com", github: "https://github.com/", role: "Frontend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFASBQXD1-efc24de6b083-512", bio: ""},
   {name: "Chris Schröder", email: "os.schroeder@gmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-U7574CYP3-5058d2c91a5f-512", bio: ""},
-  {name: "Donaldo Celaj", email: "Donaldocelaj@gmail.com", github: "https://github.com/donaldocelaj", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEPMEPR96-0b50fda3dd85-512", bio: ""},
+  {name: "Donaldo Celaj", email: "Donaldocelaj@gmail.com", github: "https://github.com/donaldocelaj", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEPMEPR96-0b50fda3dd85-512", bio: "Studied at Michigan State University, worked as an advertising and web development contractor. Interested in future technological developments, psychology, and philosophy."},
   {name: "Ming Liu", email: "ming@brooksidemediaco.com", github: "https://github.com/skysthelimit68", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFH4T28HX-64713d6bec86-512", bio: ""},
-  {name: "Olympia Wojcik", email: "owojcik7@gmail.com", github: "https://github.com/olympiawoj", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEWMPRCBE-a9bb15b05e99-512", bio: ""},
+  {name: "Olympia Wojcik", email: "owojcik7@gmail.com", github: "https://github.com/olympiawoj", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEWMPRCBE-a9bb15b05e99-512", bio: "Olympia is a finance professional turned software developer. She has just completed 15 weeks of full-stack WEB17 as a student and is excited to be joining WEB20 as Section Lead."},
   {name: "Sammy Lee", email: "gygantor@protonmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UCPBJFG3G-ef724dc0c09c-512", bio: ""},
 ]
 
