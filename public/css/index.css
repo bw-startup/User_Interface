@@ -1842,7 +1842,7 @@ header nav .mobile-nav-container {
   }
 }
 header nav .mobile-nav-container .nav-active {
-  border-bottom: 3px solid #2368a2;
+  border-bottom: 3px solid #38c172;
 }
 header nav a {
   text-transform: uppercase;
@@ -1889,7 +1889,7 @@ header nav a:last-child:active {
   color: white !important;
 }
 header nav a:hover {
-  border-bottom: 3px solid #2368a2;
+  border-bottom: 3px solid #38c172;
 }
 @media (max-width:768px) {
   header nav a:hover {
@@ -1900,7 +1900,7 @@ header nav a:hover {
   }
 }
 header nav a:active {
-  border-bottom: 3px solid #2368a2;
+  border-bottom: 3px solid #38c172;
 }
 @media (max-width:768px) {
   header nav a:active {
@@ -2036,7 +2036,7 @@ footer p {
   padding: 5px;
 }
 .teamCard-block .teamCard-content .block-content-body {
-  padding: 25px;
+  padding: 15px;
   text-align: left;
 }
 .teamCard-block .teamCard-content .block-content-icons {
