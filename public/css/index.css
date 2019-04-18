@@ -1732,6 +1732,9 @@ a {
 .bg-light-grey {
   background-color: #E1E9F2;
 }
+.bg-white {
+  background-color: #FFF;
+}
 /**
  * Buttons
  */
