@@ -1859,7 +1859,7 @@ header nav a {
   }
 }
 header nav a:last-child {
-  border: 1px solid #249d57;
+  border: 1px solid #38c172;
   padding: 8px 15px;
   border-radius: 5px;
   margin-left: 0.6rem;
@@ -1874,7 +1874,7 @@ header nav a:last-child {
 }
 header nav a:last-child:hover {
   background-color: #38c172;
-  border: 1px solid #249d57;
+  border: 1px solid #38c172;
   color: white !important;
 }
 @media (max-width:768px) {
@@ -2005,10 +2005,16 @@ footer p {
   display: none;
   transform: rotate(-90deg);
   width: 100%;
+  text-align: center;
+}
+.teamCard-block .teamCard-content i {
+  font-size: 1.5rem !important;
+  color: #333;
 }
 .teamCard-block .teamCard-content .block-content-header {
   color: white;
   padding: 5px 10px;
+  text-align: left;
 }
 .teamCard-block .teamCard-content .block-content-header h4 {
   margin: 0;
@@ -2016,6 +2022,13 @@ footer p {
 }
 .teamCard-block .teamCard-content .block-content-body {
   padding: 10px;
+  text-align: left;
+}
+.teamCard-block .teamCard-content .block-content-icons {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 .teamCard-block .active-card {
   display: block !important;
@@ -2024,4 +2037,5 @@ footer p {
   left: 0;
   transform: rotate(0deg);
   transition: all 500ms;
+  height: 100%;
 }

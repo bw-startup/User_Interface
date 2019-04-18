@@ -18,10 +18,17 @@
       display:none;
       transform:rotate(-90deg);
       width:100%;
+      text-align:center;
       
+      i {
+          font-size:1.5rem !important;
+          color:#333;
+          }
+
       .block-content-header {
         color:white;
         padding:5px 10px;
+        text-align:left;
         
         h4 {
           margin:0;
@@ -31,7 +38,16 @@
 
       .block-content-body {
         padding:10px;
+        text-align:left;
       }
+
+      .block-content-icons {
+        position:fixed;
+        bottom:0;
+        text-align: center;
+        width:100%;
+      }
+      
     }
     
     .active-card {
@@ -41,7 +57,10 @@
       left:0;
       transform:rotate(0deg);
       transition: all 500ms;
+      height:100%;
+      
     }
+
   }
   
   
