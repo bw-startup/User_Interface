@@ -2020,6 +2020,16 @@ footer p {
 .teamCard-block .teamCard-faceCard {
   display: block ;
 }
+.teamCard-block .faceCard-content {
+  font-size: 0.9rem;
+  padding: 0 1.5rem 20px;
+  display: none;
+}
+@media (max-width:768px) {
+  .teamCard-block .faceCard-content {
+    display: block;
+  }
+}
 .teamCard-block .faceCard-icons {
   text-align: center;
   width: 100%;

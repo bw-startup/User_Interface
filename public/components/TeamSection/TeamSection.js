@@ -87,6 +87,12 @@ class TeamCard {
     p.textContent = this.data.role
     faceCard.appendChild(p)
 
+    let facecardContent = document.createElement("p")
+    facecardContent.setAttribute("class","faceCard-content")
+    facecardContent.textContent = this.data.bio
+    faceCard.appendChild(facecardContent)
+
+
     let facecardIcons = document.createElement("div")
     facecardIcons.setAttribute("class", "faceCard-icons")
     this.setupIcons(facecardIcons)
