@@ -1989,6 +1989,10 @@ header nav a:active {
 #cta-section {
   padding-top: 90px;
 }
+#cta-section img {
+  border-radius: 5px;
+  box-shadow: 0 0 15px #ccc;
+}
 footer {
   padding: 10px;
 }
@@ -2001,6 +2005,8 @@ footer p {
 .teamCard-block {
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #ccc;
 }
 .teamCard-block .teamCard-faceCard {
   display: block ;
