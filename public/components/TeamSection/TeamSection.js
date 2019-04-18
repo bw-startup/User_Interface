@@ -104,13 +104,17 @@ class TeamCard {
     content.textContent = this.data.bio
     contentCard.appendChild(content)
 
+    let icons = document.createElement("div")
+    icons.setAttribute("class", "block-content-icons")
+    contentCard.appendChild(icons)
+
     let a_email = document.createElement("a")
     a_email.setAttribute("href", `mailto:${this.data.email}`)
 
     let i_email = document.createElement("i")
     i_email.setAttribute("class","m-3 far fa-envelope-open")
     a_email.appendChild(i_email)
-    contentCard.appendChild(a_email)
+    icons.appendChild(a_email)
 
     let a_github = document.createElement("a")
     a_github.setAttribute("href", this.data.github)
@@ -119,9 +123,8 @@ class TeamCard {
     let i_github = document.createElement("i")
     i_github.setAttribute("class", "m-3 fab fa-github")
     a_github.appendChild(i_github)
-    contentCard.appendChild(a_github)
+    icons.appendChild(a_github)
 
-    
     if (this.data.linkedin != "") {
       let a_linkedin = document.createElement("a")
       a_linkedin.setAttribute("href", this.data.linkedin)
@@ -130,7 +133,7 @@ class TeamCard {
       let i_linkedin = document.createElement("i")
       i_linkedin.setAttribute("class", "m-3 fab fa-linkedin")
       a_linkedin.appendChild(i_linkedin)
-      contentCard.appendChild(a_linkedin)
+      icons.appendChild(a_linkedin)
     }
   
 
