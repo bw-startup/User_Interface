@@ -1844,6 +1844,11 @@ header nav .mobile-nav-container {
 header nav .mobile-nav-container .nav-active {
   border-bottom: 3px solid #38c172;
 }
+@media (max-width:768px) {
+  header nav .mobile-nav-container .nav-active {
+    border-bottom: 1px solid #ccc;
+  }
+}
 header nav a {
   text-transform: uppercase;
   font-family: Lato, sans-serif;
