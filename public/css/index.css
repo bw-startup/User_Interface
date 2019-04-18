@@ -1735,6 +1735,7 @@ a {
   color: #249d57;
   font-size: 1.3rem;
   font-weight: 500;
+  text-decoration: none;
   cursor: pointer;
   padding-right: 3rem !important;
   padding-left: 3rem !important;
