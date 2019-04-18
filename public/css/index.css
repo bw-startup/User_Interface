@@ -1965,6 +1965,9 @@ header nav a:active {
     padding: 100px 2.5rem;
   }
 }
+#process-section {
+  background-color: #4285F4;
+}
 #process-section .container {
   padding: 20px 0;
 }
