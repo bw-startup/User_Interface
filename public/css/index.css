@@ -1998,18 +1998,33 @@ footer p {
 .teamCard-block .teamCard-faceCard {
   display: block ;
 }
+.teamCard-block .faceCard-icons {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+@media (max-width:768px) {
+  .teamCard-block .faceCard-icons {
+    display: block;
+  }
+}
+.teamCard-block i {
+  font-size: 1.5rem !important;
+  color: #333;
+}
 .teamCard-block .hide-face-card {
-  visibility: hidden !important;
+  visibility: hidden;
+}
+@media (max-width:768px) {
+  .teamCard-block .hide-face-card {
+    visibility: visible !important;
+  }
 }
 .teamCard-block .teamCard-content {
   display: none;
   transform: rotate(-90deg);
   width: 100%;
   text-align: center;
-}
-.teamCard-block .teamCard-content i {
-  font-size: 1.5rem !important;
-  color: #333;
 }
 .teamCard-block .teamCard-content .block-content-header {
   color: white;
@@ -2021,7 +2036,7 @@ footer p {
   padding: 5px;
 }
 .teamCard-block .teamCard-content .block-content-body {
-  padding: 10px;
+  padding: 25px;
   text-align: left;
 }
 .teamCard-block .teamCard-content .block-content-icons {
@@ -2031,11 +2046,16 @@ footer p {
   width: 100%;
 }
 .teamCard-block .active-card {
-  display: block !important;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   transform: rotate(0deg);
   transition: all 500ms;
   height: 100%;
+}
+@media (max-width:768px) {
+  .teamCard-block .active-card {
+    display: none !important;
+  }
 }

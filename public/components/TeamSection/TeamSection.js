@@ -88,6 +88,11 @@ class TeamCard {
     p.textContent = this.data.role
     faceCard.appendChild(p)
 
+    let facecardIcons = document.createElement("div")
+    facecardIcons.setAttribute("class", "faceCard-icons")
+    this.setupIcons(facecardIcons)
+    faceCard.appendChild(facecardIcons)
+
     let contentCard = document.createElement("div")
     contentCard.setAttribute("class","teamCard-content")
     cardBlock.appendChild(contentCard);
@@ -108,13 +113,19 @@ class TeamCard {
     icons.setAttribute("class", "block-content-icons")
     contentCard.appendChild(icons)
 
+    this.setupIcons(icons);
+    this.setEventListeners(cardBlock, contentCard, faceCard);
+  }
+  
+
+  setupIcons(iconWrapper) {
     let a_email = document.createElement("a")
     a_email.setAttribute("href", `mailto:${this.data.email}`)
 
     let i_email = document.createElement("i")
     i_email.setAttribute("class","m-3 far fa-envelope-open")
     a_email.appendChild(i_email)
-    icons.appendChild(a_email)
+    iconWrapper.appendChild(a_email)
 
     let a_github = document.createElement("a")
     a_github.setAttribute("href", this.data.github)
@@ -123,7 +134,7 @@ class TeamCard {
     let i_github = document.createElement("i")
     i_github.setAttribute("class", "m-3 fab fa-github")
     a_github.appendChild(i_github)
-    icons.appendChild(a_github)
+    iconWrapper.appendChild(a_github)
 
     if (this.data.linkedin != "") {
       let a_linkedin = document.createElement("a")
@@ -133,11 +144,8 @@ class TeamCard {
       let i_linkedin = document.createElement("i")
       i_linkedin.setAttribute("class", "m-3 fab fa-linkedin")
       a_linkedin.appendChild(i_linkedin)
-      icons.appendChild(a_linkedin)
+      iconWrapper.appendChild(a_linkedin)
     }
-  
-
-    this.setEventListeners(cardBlock, contentCard, faceCard);
   }
 }
 
