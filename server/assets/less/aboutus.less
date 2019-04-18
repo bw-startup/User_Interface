@@ -10,18 +10,44 @@
       display:block ;
     }
 
+    .faceCard-icons {
+      text-align: center;
+      width:100%;
+      display:none;
+      @media @tablet {
+        display:block;
+      }
+    }
+
+    a {
+      cursor:pointer;
+    }
+
+    i {
+      font-size:1.5rem !important;
+      color:#333;
+    }
+
     .hide-face-card {
-      visibility:hidden !important;
+      visibility:hidden;
+      
+      @media @tablet {
+        visibility: visible !important;
+      }
     }
 
     .teamCard-content {
       display:none;
       transform:rotate(-90deg);
       width:100%;
+      text-align:center;
       
+      
+
       .block-content-header {
         color:white;
         padding:5px 10px;
+        text-align:left;
         
         h4 {
           margin:0;
@@ -30,18 +56,33 @@
       }
 
       .block-content-body {
-        padding:10px;
+        padding:15px;
+        text-align:left;
       }
+
+      .block-content-icons {
+        position:fixed;
+        bottom:0;
+        text-align: center;
+        width:100%;
+      }
+      
     }
     
     .active-card {
-      display:block !important;
+      display:block;
       position:absolute;
       top:0;
       left:0;
       transform:rotate(0deg);
       transition: all 500ms;
+      height:100%;
+      @media @tablet {
+        display:none !important;
+      }
+      
     }
+
   }
   
   

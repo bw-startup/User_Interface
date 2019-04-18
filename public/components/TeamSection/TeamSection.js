@@ -6,15 +6,15 @@ let srCounter = 0;
  */
 
 const data = [
-  {name: "Audrey Akwenye", email: "pending@gmail.com", github: "https://github.com/", role: "Team Leader", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UDRCZPDV5-4830c84686b2-512", bio: ""},
-  {name: "Andy Bettisworth", email: "andy@accreu.com", github: "https://github.com/wurde", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UGBNBF0SV-56a86324406c-512", bio: "Space cowboy from Texas that is either writing code or training for a triathlon."},
-  {name: "Alex E.", email: "pending@gmail.com", github: "https://github.com/AlexEntrepreneur", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEB79VDNH-1bbd05b917e5-512", bio: ""},
-  {name: "Christian Ipanaque", email: "pending@gmail.com", github: "https://github.com/", role: "Frontend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFASBQXD1-efc24de6b083-512", bio: ""},
-  {name: "Chris Schröder", email: "os.schroeder@gmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-U7574CYP3-5058d2c91a5f-512", bio: ""},
-  {name: "Donaldo Celaj", email: "Donaldocelaj@gmail.com", github: "https://github.com/donaldocelaj", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEPMEPR96-0b50fda3dd85-512", bio: ""},
-  {name: "Ming Liu", email: "ming@brooksidemediaco.com", github: "https://github.com/skysthelimit68", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFH4T28HX-64713d6bec86-512", bio: ""},
-  {name: "Olympia Wojcik", email: "owojcik7@gmail.com", github: "https://github.com/olympiawoj", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEWMPRCBE-a9bb15b05e99-512", bio: ""},
-  {name: "Sammy Lee", email: "gygantor@protonmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UCPBJFG3G-ef724dc0c09c-512", bio: ""},
+  {name: "Audrey Akwenye", email: "pending@gmail.com", github: "https://github.com/", role: "Team Leader", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UDRCZPDV5-4830c84686b2-512", bio: "", linkedin:"", twitter:""},
+  {name: "Andy Bettisworth", email: "andy@accreu.com", github: "https://github.com/wurde", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UGBNBF0SV-56a86324406c-512", bio: "Space cowboy from Texas that is either writing code or training for a triathlon.", linkedin:"", twitter:""},
+  {name: "Alex E.", email: "pending@gmail.com", github: "https://github.com/AlexEntrepreneur", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEB79VDNH-1bbd05b917e5-512", bio: "London-based Designer & Entrepreneur working towards becoming a Backend Developer. WEBEU1 & PM @ WEBEU2.", linkedin:"", twitter:"https://twitter.com/alexentrprnr"},
+  {name: "Christian Ipanaque", email: "pending@gmail.com", github: "https://github.com/", role: "Frontend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFASBQXD1-efc24de6b083-512", bio: "Rackmount Server Technician, to AWS Cloud Specialist, to Software Engineer that delivers strong and sustainable gains in performance and productivity. Dedicated to maintaining a reputation built on quality, service and a hard worker ethic.", linkedin:"", twitter:""},
+  {name: "Chris Schröder", email: "os.schroeder@gmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-U7574CYP3-5058d2c91a5f-512", bio: "Lambda School Data Scientist that believes strongly in applying the Socratic method liberally and reflexively.  My interests include complex (non-linear) systems, paradox, and Data Science, the last being a vehicle for understanding the former.", linkedin:"", twitter:""},
+  {name: "Donaldo Celaj", email: "Donaldocelaj@gmail.com", github: "https://github.com/donaldocelaj", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEPMEPR96-0b50fda3dd85-512", bio: "Studied at Michigan State University, worked as an advertising and web development contractor. Interested in future technological developments, psychology, and philosophy.", linkedin:"", twitter:""},
+  {name: "Ming Liu", email: "ming@brooksidemediaco.com", github: "https://github.com/skysthelimit68", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFH4T28HX-64713d6bec86-512", bio: "A self-motivated developer who is passionate about developing applications that solve user problems and learning new technologies. Currently enrolled in Lambda School Full Stack WEB19.", linkedin:"", twitter:""},
+  {name: "Olympia Wojcik", email: "owojcik7@gmail.com", github: "https://github.com/olympiawoj", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEWMPRCBE-a9bb15b05e99-512", bio: "Olympia is a finance professional turned software developer. She has just completed 15 weeks of full-stack WEB17 as a student and is excited to be joining WEB20 as Section Lead.", linkedin:"https://www.linkedin.com/in/olympiawoj/", twitter:""},
+  {name: "Sammy Lee", email: "gygantor@protonmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UCPBJFG3G-ef724dc0c09c-512", bio: "", linkedin:"", twitter:""},
 ]
 
 const colorSet = [["Team Leader","bg-chathams-blue"], ["User Interface", "bg-matisse"], ["Backend Engineer", "bg-jewel"], ["Frontend Engineer", "bg-eucalyptus"], ["Data Science", "bg-green-pea"]];
@@ -88,6 +88,11 @@ class TeamCard {
     p.textContent = this.data.role
     faceCard.appendChild(p)
 
+    let facecardIcons = document.createElement("div")
+    facecardIcons.setAttribute("class", "faceCard-icons")
+    this.setupIcons(facecardIcons)
+    faceCard.appendChild(facecardIcons)
+
     let contentCard = document.createElement("div")
     contentCard.setAttribute("class","teamCard-content")
     cardBlock.appendChild(contentCard);
@@ -104,13 +109,23 @@ class TeamCard {
     content.textContent = this.data.bio
     contentCard.appendChild(content)
 
+    let icons = document.createElement("div")
+    icons.setAttribute("class", "block-content-icons")
+    contentCard.appendChild(icons)
+
+    this.setupIcons(icons);
+    this.setEventListeners(cardBlock, contentCard, faceCard);
+  }
+  
+
+  setupIcons(iconWrapper) {
     let a_email = document.createElement("a")
     a_email.setAttribute("href", `mailto:${this.data.email}`)
 
     let i_email = document.createElement("i")
     i_email.setAttribute("class","m-3 far fa-envelope-open")
     a_email.appendChild(i_email)
-    contentCard.appendChild(a_email)
+    iconWrapper.appendChild(a_email)
 
     let a_github = document.createElement("a")
     a_github.setAttribute("href", this.data.github)
@@ -119,9 +134,29 @@ class TeamCard {
     let i_github = document.createElement("i")
     i_github.setAttribute("class", "m-3 fab fa-github")
     a_github.appendChild(i_github)
-    contentCard.appendChild(a_github)
+    iconWrapper.appendChild(a_github)
 
-    this.setEventListeners(cardBlock, contentCard, faceCard);
+    if (this.data.linkedin != "") {
+      let a_linkedin = document.createElement("a")
+      a_linkedin.setAttribute("href", this.data.linkedin)
+      a_linkedin.setAttribute("target","_blank")
+
+      let i_linkedin = document.createElement("i")
+      i_linkedin.setAttribute("class", "m-3 fab fa-linkedin")
+      a_linkedin.appendChild(i_linkedin)
+      iconWrapper.appendChild(a_linkedin)
+    }
+
+    if (this.data.twitter != "") {
+      let a_twitter = document.createElement("a")
+      a_twitter.setAttribute("href", this.data.twitter)
+      a_twitter.setAttribute("target","_blank")
+
+      let i_twitter = document.createElement("i")
+      i_twitter.setAttribute("class", "m-3 fab fa-twitter")
+      a_twitter.appendChild(i_twitter)
+      iconWrapper.appendChild(a_twitter)
+    }
   }
 }
 
