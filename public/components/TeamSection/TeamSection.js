@@ -7,7 +7,7 @@ let srCounter = 0;
 
 const data = [
   {name: "Audrey Akwenye", email: "pending@gmail.com", github: "https://github.com/", role: "Team Leader", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UDRCZPDV5-4830c84686b2-512", bio: ""},
-  {name: "Andy Bettisworth", email: "andy@accreu.com", github: "https://github.com/wurde", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UGBNBF0SV-56a86324406c-512", bio: ""},
+  {name: "Andy Bettisworth", email: "andy@accreu.com", github: "https://github.com/wurde", role: "User Interface", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UGBNBF0SV-56a86324406c-512", bio: "Space cowboy from Texas that is either writing code or training for a triathlon."},
   {name: "Alex E.", email: "pending@gmail.com", github: "https://github.com/AlexEntrepreneur", role: "Backend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UEB79VDNH-1bbd05b917e5-512", bio: ""},
   {name: "Christian Ipanaque", email: "pending@gmail.com", github: "https://github.com/", role: "Frontend Engineer", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-UFASBQXD1-efc24de6b083-512", bio: ""},
   {name: "Chris Schröder", email: "os.schroeder@gmail.com", github: "https://github.com/", role: "Data Science", profile_pic: "https://ca.slack-edge.com/T4JUEB3ME-U7574CYP3-5058d2c91a5f-512", bio: ""},
