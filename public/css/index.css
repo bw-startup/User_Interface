@@ -2007,6 +2007,11 @@ header nav a:active {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:768px) {
+  #case-study-section i {
+    padding: 40px;
+  }
+}
 #cta-section {
   padding-top: 90px;
 }
