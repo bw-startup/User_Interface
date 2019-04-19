@@ -1955,6 +1955,7 @@ header nav a:active {
   padding: 8px 16px;
   border-radius: 50%;
   text-decoration: none;
+  z-index: 9999;
 }
 #a-demo-video:target {
   display: flex;
