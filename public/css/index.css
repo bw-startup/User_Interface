@@ -2003,9 +2003,19 @@ header nav a:active {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+#case-study-section .container h3 {
+  padding-bottom: 20px;
+}
+#case-study-section .container p {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
 #case-study-section .img-wrapper {
   justify-content: center;
   align-items: center;
+}
+#case-study-section .case-imgs {
+  padding-top: 60px;
 }
 @media (max-width:768px) {
   #case-study-section i {
