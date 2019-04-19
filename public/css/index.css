@@ -2000,6 +2000,9 @@ header nav a:active {
     padding: 30px;
   }
 }
+#case-study-section {
+  background-color: #4285F4;
+}
 #case-study-section .container {
   padding-top: 60px;
   padding-bottom: 60px;
